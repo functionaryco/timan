@@ -11,7 +11,8 @@ function Bar({ time, hour, arr }: Props) {
     return (
         <div className=''>
             {arr.map((val) => (
-                <div key={val} sx={{ background: (val <= (hour == 12 ? time % 12 : time)) ? "white" : "purple", width: '100%', height: '10px', marginBottom: '5px'  }}></div>
+                // <div key={val} sx={{ backgroundColor: (val <= (hour == 12 ? time % 12 : time)) ? 'tint' : 'intt', width: '100%', height: '10px', marginBottom: '5px'  }}></div>
+                <div key={val} sx={{ backgroundColor: (val <= (hour == 12 ? time % 12 : time)) ? 'red' : 'blue', width: '100%', height: '10px', marginBottom: '5px'  }}></div>
             ))
             }
         </div >

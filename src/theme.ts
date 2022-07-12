@@ -10,6 +10,8 @@ const theme: Theme = {
         ...deep.colors,
       },
     },
+    tint: 'red',
+    intt: "blue"
   },
   layout: {
     container: {
