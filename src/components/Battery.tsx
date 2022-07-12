@@ -6,7 +6,6 @@ import Time from './Time';
 
 function Battery() {
     const [hour, setHour] = useState<any>(12);
-    console.log("hour", hour)
     var today = new Date();
     var time = today.getHours();
     var min = today.getMinutes();

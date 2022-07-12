@@ -8,6 +8,8 @@ const theme: Theme = {
     modes: {
       dark: {
         ...deep.colors,
+        tint: 'green',
+        intt: "yellow"
       },
     },
     tint: 'red',
