@@ -18,7 +18,7 @@ export default function Header() {
           ml="auto"
           onClick={() => setColorMode(colorMode === 'dark' ? 'light' : 'dark')}
         >
-          Toggle {colorMode === 'dark' ? 'Light' : 'Dark'}
+          Toggle
         </Button>
       </Flex>
     </Container>

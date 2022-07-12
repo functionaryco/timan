@@ -8,10 +8,26 @@ const theme: Theme = {
     modes: {
       dark: {
         ...deep.colors,
+        tint: 'blue',
+        intt: 'red',
       },
     },
     tint: 'red',
-    intt: "blue"
+    intt: 'blue',
+  },
+  forms: {
+    input: {
+      border: 0,
+      px: 2,
+      py: 1,
+      bg: 'primary'
+    },
+    label: {
+      color: 'gray.6',
+      fontSize: 1,
+      fontWeight: 500,
+      pb: 0,
+    },
   },
   layout: {
     container: {
@@ -31,7 +47,6 @@ const theme: Theme = {
       fontFamily: 'body',
     },
   },
-
 };
 
 export default theme;

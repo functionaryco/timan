@@ -5,7 +5,6 @@ import Document, {
   NextScript,
   DocumentContext,
 } from 'next/document';
-import Battery from 'src/components/Battery';
 import { InitializeColorMode } from 'theme-ui';
 
 class MyDocument extends Document {
@@ -21,9 +20,6 @@ class MyDocument extends Document {
           <InitializeColorMode />
           <Main />
           <NextScript />
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Battery />
-          </div>
         </body>
       </Html>
     );
