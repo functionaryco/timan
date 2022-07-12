@@ -1,11 +1,6 @@
 /** @jsxImportSource theme-ui */
-<<<<<<< HEAD
-import React from 'react'
-import { Box } from 'theme-ui'
-=======
 import React from 'react';
 import { Box } from 'theme-ui';
->>>>>>> b8c037ac2b176e7895b44cba10e45b0d45073cf7
 
 interface Props {
   time: number;
@@ -14,18 +9,6 @@ interface Props {
 }
 
 function Bar({ time, hour, arr }: Props) {
-<<<<<<< HEAD
-    return (
-        <div className=''>
-            {arr.map((val) => (
-                <Box key={val} bg="intt" sx={{width:"100%",height:'12px',marginBottom: '5px'}}>x</Box>
-                // <div key={val} sx={{ backgroundColor: (val <= (hour == 12 ? time % 12 : time)) ? 'red' : 'blue', width: '100%', height: '10px', marginBottom: '5px'  }}></div>
-                // <div key={val} sx={{ backgroundColor: (val <= (hour == 12 ? time % 12 : time)) ? 'primary' : 'purple', width: '100%', height: '10px', marginBottom: '5px'  }}></div>
-            ))
-            }
-        </div >
-    )
-=======
   return (
     <Box>
       {arr.map((val: any) => (
@@ -43,7 +26,6 @@ function Bar({ time, hour, arr }: Props) {
       ))}
     </Box>
   );
->>>>>>> b8c037ac2b176e7895b44cba10e45b0d45073cf7
 }
 
 export default Bar;

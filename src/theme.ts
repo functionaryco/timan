@@ -199,14 +199,9 @@ const theme: Theme = {
     ],
     modes: {
       dark: {
-<<<<<<< HEAD
-        ...deep.colors,
-        tint: 'green',
-        intt: "yellow"
-=======
         text: '#fff',
         base: '#000',
-        background: 'gray.8',
+        background: '#343a40',
         green: [
           '#ebfbee',
           '#d3f9d8',
@@ -548,7 +543,6 @@ const theme: Theme = {
       ':hover': {
         bg: 'primary',
         color: 'white',
->>>>>>> b8c037ac2b176e7895b44cba10e45b0d45073cf7
       },
     },
   },
@@ -855,7 +849,7 @@ const theme: Theme = {
       fontWeight: 600,
     },
     pagetitle: {
-      fontSize: [1,1,5],
+      fontSize: [1, 1, 5],
       mb: 3,
       fontWeight: 300,
     },
