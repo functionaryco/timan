@@ -29,6 +29,7 @@ const theme: Theme = {
       fontFamily: 'body',
     },
   },
+
 };
 
 export default theme;
