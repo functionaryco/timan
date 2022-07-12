@@ -5,6 +5,7 @@ import Document, {
   NextScript,
   DocumentContext,
 } from 'next/document';
+
 import { InitializeColorMode } from 'theme-ui';
 
 class MyDocument extends Document {

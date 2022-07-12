@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 import React from 'react';
+import { Box } from 'theme-ui';
 
 interface Props {
   time: number;
@@ -9,21 +10,21 @@ interface Props {
 
 function Bar({ time, hour, arr }: Props) {
   return (
-    <div className="">
+    <Box>
       {arr.map((val: any) => (
         // <div key={val} sx={{ backgroundColor: (val <= (hour == 12 ? time % 12 : time)) ? 'tint' : 'intt', width: '100%', height: '10px', marginBottom: '5px'  }}></div>
-        <div
+        <Box
           key={val}
           sx={{
-            bg:
-              val <= (hour == 12 ? time % 12 : time) ? 'tint' : 'intt',
+            borderRadius: '2px',
+            bg: val <= (hour == 12 ? time % 12 : time) ? 'primary' : 'secondary',
             width: '100%',
             height: '10px',
             marginBottom: '5px',
           }}
-        ></div>
+        ></Box>
       ))}
-    </div>
+    </Box>
   );
 }
 

@@ -14,12 +14,12 @@ export default function Header() {
         <Link href="/style" passHref>
           <NavLink p={2}>Style Guide</NavLink>
         </Link>
-        <Button
+        {/* <Button
           ml="auto"
           onClick={() => setColorMode(colorMode === 'dark' ? 'light' : 'dark')}
         >
           Toggle
-        </Button>
+        </Button> */}
       </Flex>
     </Container>
   );
