@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react'
-import { Input } from 'theme-ui';
+import { Box, Container, Input } from 'theme-ui';
 import Bar from './Bar';
 import Percentage from './Percentage';
 import Time from './Time';
@@ -15,20 +15,18 @@ function Battery() {
         arr.push(i);
     }
     return (
-        <div style={{ width: '70vw' }}>
+        <Container style={{ width: '70vw' }}>
             <Head>
                 <title>Battery Status</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div>
-                <Input placeholder='insert time format 12 or 24' value={hour} onChange={(e) => setHour(e.target.value)} type="number" style={{ width: "100%" }} />
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <Input placeholder='insert time format 12 or 24' value={hour} onChange={(e) => setHour(e.target.value)} type="number" style={{ width: "100%" }} />
+            <Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <Time hour={hour} time={time} min={min} />
                 <Percentage time={time} hour={hour} />
-            </div>
+            </Container>
             <Bar hour={hour} time={time} arr={arr} />
-        </div>
+        </Container>
     )
 }
 

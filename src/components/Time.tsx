@@ -1,4 +1,5 @@
 import React from 'react'
+import { Box, Text } from 'theme-ui'
 
 interface Props {
     time: number,
@@ -9,10 +10,10 @@ interface Props {
 function Time({ time, min, hour }: Props) {
 
     return (
-        <div className='flex gap-4'>
-            <h1 style={{ marginBottom: "0px" }}>{time}:{min} Time</h1>
-            <h4 style={{ marginTop: "0px" }}>{hour} Hours Format</h4>
-        </div>
+        <Box style={{ display: 'flex', flexDirection: 'column' }}>
+            <Text>{time}:{min} Time</Text>
+            <Text>{hour} Hours Format</Text>
+        </Box>
     )
 }
 

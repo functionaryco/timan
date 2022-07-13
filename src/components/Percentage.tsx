@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Text } from 'theme-ui';
 
 interface Props {
     time: number,
@@ -10,9 +11,7 @@ function Percentage({ time, hour }: Props) {
     var per = hour == 12 ? ((time % 12) / hour) : (time / hour);
     var perc = (Math.round(per * 100));
     return (
-        <div>
-            <h1>{perc}% Finish</h1>
-        </div>
+        <Text>{perc}% Finish</Text>
     )
 }
 
