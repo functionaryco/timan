@@ -11,7 +11,7 @@ interface Props {
 function Bar({ time, hour, arr }: Props) {
   return (
     <Box>
-      {arr.map((val: any) => (
+      {arr?.map((val: any) => (
         // <div key={val} sx={{ backgroundColor: (val <= (hour == 12 ? time % 12 : time)) ? 'tint' : 'intt', width: '100%', height: '10px', marginBottom: '5px'  }}></div>
         <Box
           key={val}
