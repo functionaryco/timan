@@ -4,7 +4,7 @@ import { Box, Text } from 'theme-ui'
 interface Props {
     time: number,
     min: number,
-    hour: number
+    hour: any
 }
 
 function Time({ time, min, hour }: Props) {

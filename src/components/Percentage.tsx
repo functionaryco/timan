@@ -3,7 +3,7 @@ import { Container, Text } from 'theme-ui';
 
 interface Props {
     time: number,
-    hour: number,
+    hour: any,
 }
 
 function Percentage({ time, hour }: Props) {

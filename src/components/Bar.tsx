@@ -4,7 +4,7 @@ import { Box } from 'theme-ui';
 
 interface Props {
   time: number;
-  hour: number;
+  hour: any;
   arr?: any;
 }
 
