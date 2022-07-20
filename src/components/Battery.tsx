@@ -4,7 +4,7 @@ import { Box, Container, Input, Text } from 'theme-ui';
 import Bar from './Bar';
 import Percentage from './Percentage';
 import Time from './Time';
-
+import 'react-day-picker/dist/style.css';
 import { addDays, format } from 'date-fns';
 import { DateRange, DayPicker } from 'react-day-picker';
 
