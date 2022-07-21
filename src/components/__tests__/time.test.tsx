@@ -4,7 +4,7 @@ import Time from '../Time';
 
 describe('Time', () => {
     it('should render without crashing', () => {
-        const { container } = render(<Time time={0} hour={0} min={0} />);
+        const { container } = render(<Time time={0} division={0} min={0} />);
         expect(container).toBeInTheDocument();
     });
 });

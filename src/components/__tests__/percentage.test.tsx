@@ -4,7 +4,7 @@ import Percentage from '../Percentage';
 
 describe('Percentage', () => {
     it('should render without crashing', () => {
-        const { container } = render(<Percentage time={0} hour={0} />);
+        const { container } = render(<Percentage hour={0} />);
         expect(container).toBeInTheDocument();
     });
 });
