@@ -3,23 +3,23 @@ import React from 'react';
 import { Box } from 'theme-ui';
 
 interface Props {
-  time: number;
   hour: any;
   arr?: any;
+  division: any;
 }
 
-function Bar({ time, hour, arr }: Props) {
+function Bar({ hour, arr, division }: Props) {
+  var nofs = (hour * division) / 100;
   return (
-    <Box>
+    <Box style={{ display: 'flex', justifyContent: 'space-between' }}>
       {arr?.map((val: any) => (
-        // <div key={val} sx={{ backgroundColor: (val <= (hour == 12 ? time % 12 : time)) ? 'tint' : 'intt', width: '100%', height: '10px', marginBottom: '5px'  }}></div>
         <Box
           key={val}
           sx={{
             borderRadius: '2px',
-            bg: val <= (hour == 12 ? time % 12 : time) ? 'primary' : 'secondary',
-            width: '100%',
-            height: '10px',
+            bg: val <= (nofs) ? 'primary' : 'secondary',
+            width: '10px',
+            height: '300px',
             marginBottom: '5px',
           }}
         ></Box>
@@ -29,5 +29,4 @@ function Bar({ time, hour, arr }: Props) {
 }
 
 export default Bar;
-// background: 'red', width: '200px', height: '10px', marginBottom: '5px'
-// (val <= (hour == 12 ? time % 12 : time)) ?
+

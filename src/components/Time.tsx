@@ -4,15 +4,15 @@ import { Box, Text } from 'theme-ui'
 interface Props {
     time: number,
     min: number,
-    hour: any
+    division: any
 }
 
-function Time({ time, min, hour }: Props) {
+function Time({ time, min, division }: Props) {
 
     return (
         <Box style={{ display: 'flex', flexDirection: 'column' }}>
             <Text>{time}:{min} Time</Text>
-            <Text>{hour} Hours Format</Text>
+            <Text>{division} Division</Text>
         </Box>
     )
 }
