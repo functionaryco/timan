@@ -33,31 +33,28 @@ function Battery() {
                 <title>Battery Status</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Container style={{ display: 'flex' }}>
-                <Container>
-                    <Text>Start Time</Text>
+            <Box style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: "30px" }}>
+                <Box style={{ display: 'flex', flexDirection: 'column' }}>
+                    <Text color='black'>Start Time</Text>
                     <select name="slot" className="weekday" value={startTime} onChange={(e) => setStartTime(e.target.value)}>
                         <option disabled={true} selected={true} value={""}>Choose Your Start Time</option>
                         {Slots.map((slot) =>
                             <option value={slot} key={slot}>{slot}</option>
                         )}
                     </select>
-                </Container>
-                <Container>
-                    <Text>End Time</Text>
+                </Box>
+                <hr style={{ height: "1px", backgroundColor: "#D21E1E", width: "100%", border: 'none', margin: '10px' }} />
+                <Box style={{ display: 'flex', flexDirection: 'column' }}>
+                    <Text color='black'>End Time</Text>
                     <select name="slot" className="weekday" value={endTime} onChange={(e) => setEndTime(e.target.value)}>
                         <option disabled={true} selected={true} value={""}>Choose Your End Time</option>
                         {Slots.map((slot) =>
                             <option value={slot} key={slot}>{slot}</option>
                         )}
                     </select>
-                </Container>
-            </Container>
+                </Box>
+            </Box>
             <Input placeholder='insert time division' value={division} onChange={(e) => setDivision(e.target.value)} type="number" style={{ width: "100%" }} />
-            <Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <Time division={division} time={time} min={min} />
-                <Percentage hour={hour} />
-            </Container>
             <Bar hour={hour} arr={arr} division={division} />
         </Container>
     )

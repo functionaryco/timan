@@ -16,10 +16,9 @@ function Bar({ hour, arr, division }: Props) {
         <Box
           key={val}
           sx={{
-            borderRadius: '2px',
             bg: val <= (nofs) ? 'primary' : 'secondary',
-            width: '10px',
-            height: '300px',
+            width: '18px',
+            height: '400px',
             marginBottom: '5px',
           }}
         ></Box>
