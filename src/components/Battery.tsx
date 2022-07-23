@@ -34,8 +34,8 @@ function Battery() {
             </Head>
             {modal &&
                 <Box style={{ width: '100%', height: '100%', position: 'absolute', backgroundColor: "rgba(50, 37, 37, 0.6)", top: "0", bottom: "0", left: '0', right: '0' }}>
-                    <Container style={{ width: '30vw', height: '30vh', position: 'absolute', marginTop: "30vh", backgroundColor: 'white', padding: '50px', marginLeft: "10vw" }}>
-                        <img src="https://img.icons8.com/ios/50/d21e1e/multiply.png" style={{ position: 'absolute', cursor: 'pointer', right: '0px', top: '0px', backgroundColor: "white", borderRadius: "50%" }} alt="cross" onClick={() => setModal(!modal)} />
+                    <Container style={{ width: '30vw', height: '30vh', position: 'absolute', marginTop: "30vh", backgroundColor: 'white', padding: '50px', marginLeft: "10vw", borderRadius: '8px' }}>
+                        <img src="https://img.icons8.com/ios/40/d21e1e/multiply.png" style={{ position: 'absolute', cursor: 'pointer', right: '0px', top: '0px', backgroundColor: "white", borderRadius: "50%" }} alt="cross" onClick={() => setModal(!modal)} />
                         <Box style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                             <Box style={{ display: 'flex', flexDirection: 'column' }}>
                                 <Text color='black'>Start Time</Text>
@@ -56,7 +56,7 @@ function Battery() {
                                 </select>
                             </Box>
                         </Box>
-                        <Input placeholder='insert time division' value={division} onChange={(e) => setDivision(e.target.value)} type="number" style={{ width: "100%", marginTop: '42px' }} />
+                        <Input placeholder='insert time division' value={division} onChange={(e) => setDivision(e.target.value)} type="number" style={{ width: "100%", marginTop: '42px', backgroundColor: 'white', color: 'black' }} />
                     </Container>
                 </Box>
             }

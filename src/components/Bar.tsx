@@ -10,6 +10,7 @@ interface Props {
 
 function Bar({ hour, arr, division }: Props) {
   var nofs = (hour * division) / 100;
+  console.log(hour, division, nofs);
   return (
     <Box style={{ display: 'flex', justifyContent: 'space-between' }}>
       {arr?.map((val: any) => (
@@ -20,6 +21,7 @@ function Bar({ hour, arr, division }: Props) {
             width: '18px',
             height: '400px',
             marginBottom: '5px',
+            borderRadius: '4px'
           }}
         ></Box>
       ))}
