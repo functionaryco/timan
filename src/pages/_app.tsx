@@ -10,11 +10,6 @@ class MyApp extends App {
     return (
       <ThemeProvider theme={theme}>
         <Head>
-          <title>Timar</title>
-          <link
-            href="https://api.fontshare.com/css?f[]=satoshi@400,500,700&display=swap"
-            rel="stylesheet"
-          />
         </Head>
         <NProgress />
         <Container>

@@ -26,9 +26,9 @@ const theme: Theme = {
   colors: {
     text: '#000',
     background: 'text',
-    primary: '#D9D9D9',
+    primary: '#828282',
     secondary: '#6FCF97',
-    muted: '#f6f6f6',
+    muted: '#333333',
     gray: [
       '#f8f9fa',
       '#f1f3f5',
@@ -201,7 +201,7 @@ const theme: Theme = {
       dark: {
         text: '#fff',
         base: '#000',
-        background: '#E5E5E5',
+        background: '#000',
         green: [
           '#ebfbee',
           '#d3f9d8',

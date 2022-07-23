@@ -17,66 +17,29 @@ exports[`Header should match snapshot 1`] = `
   display: flex;
 }
 
-.emotion-2 {
+.emotion-3 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 800;
-  display: inline-block;
   padding: 8px;
-}
-
-.emotion-2:hover,
-.emotion-2:focus,
-.emotion-2.active {
-  color: var(--theme-ui-colors-primary);
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  width: 100%;
-  max-width: container;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 120ch;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .emotion-5 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  color: black;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
   background-color: var(--theme-ui-colors-primary);
   width: 18px;
-  height: 400px;
   margin-bottom: 5px;
   border-radius: 4px;
 }
 
-.emotion-11 {
+.emotion-14 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
   background-color: var(--theme-ui-colors-secondary);
   width: 18px;
-  height: 400px;
   margin-bottom: 5px;
   border-radius: 4px;
 }
@@ -84,120 +47,128 @@ exports[`Header should match snapshot 1`] = `
 <div>
   <div
     class="emotion-0"
-    style="height: 114px; border-bottom: 2px solid #D9D9D9; width: 100%; align-items: center;"
+    style="height: 114px; border-bottom: 2px solid #4F4F4F; width: 100%; align-items: center;"
   >
     <div
       class="emotion-1"
-      style="display: flex; justify-content: space-between; padding: 37px;"
+      style="display: flex; justify-content: space-between; padding: 36px 0px 26.5px 0px;"
     >
-      <a
-        class="emotion-2"
-        style="padding: 0px; margin-left: 116px; color: black;"
+      <div
+        class="emotion-0"
+        style="padding: 0px; margin-left: 67px; color: rgb(224, 224, 224); cursor: pointer; font: Inter; font-weight: 300; font-size: 36px; line-height: 54px; letter-spacing: 0.2%;"
       >
-        Timar
-      </a>
-      <a
-        class="emotion-2"
-        style="padding: 12px 24px; background-color: rgb(224, 224, 224); color: black; font: Europa-Regular; font-weight: 400; line-height: 16px; margin-right: 60px; cursor: pointer;"
+        00
+      </div>
+      <div
+        class="emotion-3"
+        style="color: rgb(224, 224, 224); margin-right: 87px; cursor: pointer; font: Inter; font-weight: 300; font-size: 36px; line-height: 54px; letter-spacing: 0.2%;"
       >
-        Manage
-      </a>
+        24
+      </div>
     </div>
   </div>
   <div
-    class="emotion-4"
-    style="display: flex; justify-content: space-between; align-items: center; margin: 48px 0px 38px 0px;"
+    class="emotion-0"
+    style="display: flex; justify-content: space-between; margin-top: 66px; height: 400px;"
   >
-    <span
+    <div
       class="emotion-5"
-    >
-      00
-    </span>
-    <hr
-      style="height: 1px; background-color: rgb(210, 30, 30); width: 100%; margin: 10px;"
     />
-    <span
+    <div
       class="emotion-5"
-    >
-      24
-    </span>
+    />
+    <div
+      class="emotion-5"
+    />
+    <div
+      class="emotion-5"
+    />
+    <div
+      class="emotion-5"
+    />
+    <div
+      class="emotion-5"
+    />
+    <div
+      class="emotion-5"
+    />
+    <div
+      class="emotion-5"
+    />
+    <div
+      class="emotion-5"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
+    <div
+      class="emotion-14"
+    />
   </div>
   <div
     class="emotion-0"
-    style="display: flex; justify-content: space-between;"
+    style="display: flex; align-items: center; justify-content: space-between; margin-top: 47px;"
   >
     <div
-      class="emotion-8"
-    />
-    <div
-      class="emotion-8"
-    />
-    <div
-      class="emotion-8"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
-    <div
-      class="emotion-11"
-    />
+      class="emotion-0"
+      style="display: flex; align-items: center; justify-content: center; gap: 21px;"
+    >
+      <div
+        class="emotion-0"
+        style="width: 29px; height: 29px; background-color: rgb(79, 79, 79); border-radius: 50%;"
+      />
+      <span
+        class="emotion-0"
+        style="width: 364px; height: 27px; font-family: Inter; font-weight: 400; font-size: 22px; line-height: 27px; color: rgb(255, 255, 255);"
+      >
+        Koramangala Thirdwave Coffeshop
+      </span>
+    </div>
+    <span
+      class="emotion-0"
+      style="width: 52px; height: 17px; font-family: Inter; font-weight: 400; font-size: 14px; line-height: 17px; color: rgb(255, 255, 255); opacity: 0.5;"
+    >
+      Change
+    </span>
   </div>
 </div>
 `;

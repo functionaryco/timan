@@ -10,16 +10,14 @@ interface Props {
 
 function Bar({ hour, arr, division }: Props) {
   var nofs = (hour * division) / 100;
-  console.log(hour, division, nofs);
   return (
-    <Box style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <Box style={{ display: 'flex', justifyContent: 'space-between', marginTop: '66px', height: '400px' }}>
       {arr?.map((val: any) => (
         <Box
           key={val}
           sx={{
             bg: val <= (nofs) ? 'primary' : 'secondary',
             width: '18px',
-            height: '400px',
             marginBottom: '5px',
             borderRadius: '4px'
           }}
