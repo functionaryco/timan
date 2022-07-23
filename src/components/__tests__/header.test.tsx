@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'test-utils';
-import Header from '../Header';
+import Battery from '../Battery';
 
 describe('Header', () => {
   it('should render without crashing', () => {
-    // const { container } = render(<Header />);
-    // expect(container).toBeInTheDocument();
+    const { container } = render(<Battery />);
+    expect(container).toBeInTheDocument();
   });
 
   // it('should match snapshot', () => {
