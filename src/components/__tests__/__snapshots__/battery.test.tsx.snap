@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 800;
+  display: inline-block;
+  padding: 8px;
+}
+
+.emotion-2:hover,
+.emotion-2:focus,
+.emotion-2.active {
+  color: var(--theme-ui-colors-primary);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: container;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: black;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: var(--theme-ui-colors-primary);
+  width: 18px;
+  height: 400px;
+  margin-bottom: 5px;
+}
+
+.emotion-11 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: var(--theme-ui-colors-secondary);
+  width: 18px;
+  height: 400px;
+  margin-bottom: 5px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+    style="height: 114px; border-bottom: 2px solid #D9D9D9; width: 100%; align-items: center;"
+  >
+    <div
+      class="emotion-1"
+      style="display: flex; justify-content: space-between; padding: 37px;"
+    >
+      <a
+        class="emotion-2"
+        style="padding: 0px; margin-left: 116px; color: black;"
+      >
+        Timar
+      </a>
+      <a
+        class="emotion-2"
+        style="padding: 12px 24px; background-color: rgb(224, 224, 224); color: black; font: Europa-Regular; font-weight: 400; line-height: 16px; margin-right: 60px; cursor: pointer;"
+      >
+        Manage
+      </a>
+    </div>
+  </div>
+  <div
+    class="emotion-4"
+    style="display: flex; justify-content: space-between; align-items: center; margin: 48px 0px 38px 0px;"
+  >
+    <span
+      class="emotion-5"
+    >
+      00
+    </span>
+    <hr
+      style="height: 1px; background-color: rgb(210, 30, 30); width: 100%; margin: 10px;"
+    />
+    <span
+      class="emotion-5"
+    >
+      24
+    </span>
+  </div>
+  <div
+    class="emotion-0"
+    style="display: flex; justify-content: space-between;"
+  >
+    <div
+      class="emotion-8"
+    />
+    <div
+      class="emotion-8"
+    />
+    <div
+      class="emotion-8"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+    <div
+      class="emotion-11"
+    />
+  </div>
+</div>
+`;

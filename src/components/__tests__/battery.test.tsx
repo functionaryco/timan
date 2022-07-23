@@ -8,8 +8,8 @@ describe('Header', () => {
     expect(container).toBeInTheDocument();
   });
 
-  // it('should match snapshot', () => {
-  //   const { container } = render(<Header />);
-  //   expect(container).toMatchSnapshot();
-  // });
+  it('should match snapshot', () => {
+    const { container } = render(<Battery />);
+    expect(container).toMatchSnapshot();
+  });
 });
