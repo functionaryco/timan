@@ -1,8 +1,6 @@
 import App from 'next/app';
 import { ThemeProvider, Container } from 'theme-ui';
 import NProgress from 'next-nprogress-emotion';
-
-import Header from '../components/Header';
 import theme from '../theme';
 import Head from 'next/head';
 
@@ -18,7 +16,6 @@ class MyApp extends App {
             rel="stylesheet"
           />
         </Head>
-        <Header />
         <NProgress />
         <Container>
           <Component {...pageProps} />
