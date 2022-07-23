@@ -67,6 +67,7 @@ exports[`Header should match snapshot 1`] = `
   width: 18px;
   height: 400px;
   margin-bottom: 5px;
+  border-radius: 4px;
 }
 
 .emotion-11 {
@@ -77,6 +78,7 @@ exports[`Header should match snapshot 1`] = `
   width: 18px;
   height: 400px;
   margin-bottom: 5px;
+  border-radius: 4px;
 }
 
 <div>
