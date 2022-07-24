@@ -15,8 +15,9 @@ function Battery() {
     const [endTime, setEndTime] = useState<any>("24")
     const [division, setDivision] = useState<any>("24");
     var today = new Date();
-    var time = 15;
-    // var min = today.getMinutes();
+    var time = today.getHours();
+    var AmOrPm1 = startTime >= 12 ? "PM" : "AM";
+    var AmOrPm2 = endTime >= 12 ? "PM" : "AM";
     const hour = ((endTime - time) / (endTime - startTime)) * 100;
     let arr = new Array();
     for (var i = 1; i <= division; i++) {
@@ -63,10 +64,16 @@ function Battery() {
             }
             <Box style={{ height: '114px', borderBottom: '2px solid #4F4F4F', width: "100%", alignItems: 'center' }}>
                 <Flex style={{ display: 'flex', justifyContent: 'space-between', padding: "36px 0px 26.5px 0px" }}>
-                    <Box style={{ padding: "0px", marginLeft: '67px', color: '#E0E0E0', cursor: 'pointer', font: 'Inter', fontWeight: "300", fontSize: '36px', lineHeight: '54px', letterSpacing: '0.2%' }} onClick={() => setModal(!modal)}>{startTime}</Box>
-                    <Box p={2} style={{ color: "#E0E0E0", marginRight: "87px", cursor: 'pointer', font: 'Inter', fontWeight: "300", fontSize: '36px', lineHeight: '54px', letterSpacing: '0.2%' }}
-                        onClick={() => setModal(!modal)}
-                    >{endTime}</Box>
+                    <Box style={{ display: 'flex', alignItems: "center", justifyContent: 'center' }}>
+                        <Box style={{ padding: "0px", marginLeft: '67px', color: '#E0E0E0', cursor: 'pointer', font: 'Inter', fontWeight: "300", fontSize: '36px', lineHeight: '54px', letterSpacing: '0.2%' }} onClick={() => setModal(!modal)}>{`${startTime % 12}:00`}</Box>
+                        <Box style={{ marginLeft: '9px', fontWeight: '400', color: '#828282', opacity: '0.5' }}>{AmOrPm1}</Box>
+                    </Box>
+                    <Box style={{ display: 'flex', alignItems: "center", justifyContent: 'center', marginRight: "87px" }}>
+                        <Box style={{ color: "#E0E0E0", cursor: 'pointer', font: 'Inter', fontWeight: "300", fontSize: '36px', lineHeight: '54px', letterSpacing: '0.2%' }}
+                            onClick={() => setModal(!modal)}
+                        >{`${endTime % 12}:00`}</Box>
+                        <Box style={{ marginLeft: '9px', fontWeight: '400', color: '#828282', opacity: '0.5' }}>{AmOrPm2}</Box>
+                    </Box>
                 </Flex>
             </Box>
             <Bar hour={hour} arr={arr} division={division} />
