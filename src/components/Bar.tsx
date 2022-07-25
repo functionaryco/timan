@@ -11,7 +11,14 @@ interface Props {
 function Bar({ hour, arr, division }: Props) {
   var nofs = (hour * division) / 100;
   return (
-    <Box style={{ display: 'flex', justifyContent: 'space-between', marginTop: '66px', height: '400px' }}>
+    <Box style={{ display: 'flex', justifyContent: 'space-between', marginTop: '66px', height: '400px' }}
+      sx={{
+        '@media screen and (max-width: 720px)': {
+          marginTop: '36px !important',
+          height: '60vh !important'
+        },
+      }}
+    >
       {arr?.map((val: any) => (
         <Box
           key={val}
@@ -19,7 +26,10 @@ function Bar({ hour, arr, division }: Props) {
             bg: val <= (nofs) ? 'primary' : 'secondary',
             width: '18px',
             marginBottom: '5px',
-            borderRadius: '4px'
+            borderRadius: '4px',
+            '@media screen and (max-width: 720px)': {
+              width: '10px !important'
+            },
           }}
         ></Box>
       ))}
