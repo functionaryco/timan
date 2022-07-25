@@ -7,9 +7,4 @@ describe('Header', () => {
     const { container } = render(<Battery />);
     expect(container).toBeInTheDocument();
   });
-
-  it('should match snapshot', () => {
-    const { container } = render(<Battery />);
-    expect(container).toMatchSnapshot();
-  });
 });

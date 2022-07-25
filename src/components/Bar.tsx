@@ -15,7 +15,8 @@ function Bar({ hour, arr, division }: Props) {
       sx={{
         '@media screen and (max-width: 720px)': {
           marginTop: '36px !important',
-          height: '60vh !important'
+          height: '60vh !important',
+          flexDirection: 'column',
         },
       }}
     >
@@ -28,7 +29,8 @@ function Bar({ hour, arr, division }: Props) {
             marginBottom: '5px',
             borderRadius: '4px',
             '@media screen and (max-width: 720px)': {
-              width: '10px !important'
+              width: '100% !important',
+              height: '10px !important'
             },
           }}
         ></Box>
