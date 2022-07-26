@@ -1,10 +1,11 @@
 /** @jsxImportSource theme-ui */
-
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react'
-import { Select, Box, Container, Flex, Input, NavLink, Text } from 'theme-ui';
+import { Select, Box, Container, Flex, Input, NavLink, Text, Image } from 'theme-ui';
 import Bar from './Bar';
 import Footer from './Footer';
+import styled from '@emotion/styled'
+import { ArrowDropDown } from '@emotion-icons/remix-line/ArrowDropDown'
 
 const Index = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
 const Slots = Index.map((hour) => {
@@ -27,7 +28,6 @@ function Battery() {
         localStorage.setItem("Time", JSON.stringify({ startTime, endTime, division }));
     }, [hour, division])
 
-
     return (
         <>
             <Head>
@@ -44,25 +44,19 @@ function Battery() {
                             marginLeft: '15vw !important'
                         },
                     }}>
-                        <img src="https://img.icons8.com/ios/35/d21e1e/multiply.png" sx={{ position: 'absolute', cursor: 'pointer', right: '0px', top: '0px' }} alt="cross" onClick={() => setModal(!modal)} />
+                        <Image src="https://img.icons8.com/ios/35/d21e1e/multiply.png" sx={{ position: 'absolute', cursor: 'pointer', right: '0px', top: '0px' }} alt="cross" onClick={() => setModal(!modal)} />
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                             <Box sx={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
                                 <Text color='black'>Start Time</Text>
                                 <Select name="slot" className="weekday" value={startTime} onChange={(e) => setStartTime(e.target.value)}
                                     arrow={
-                                        <Box
-                                            as="svg"
-                                            xmln="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="currentcolor"
-                                            sx={{
-                                                ml: -28,
-                                                alignSelf: 'center',
-                                                pointerEvents: 'none',
-                                            }}>
-                                            <path d="M7.41 7.84l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z" />
+                                        <Box>
+                                            <ArrowDropDown
+                                                sx={{
+                                                    position: "absolute", height: '40px', width: '40px', justifyContent: 'space-between',
+                                                    alignSelf: 'center',
+                                                    ml: "-40px"
+                                                }} />
                                         </Box>
                                     }
                                 >
@@ -75,19 +69,13 @@ function Battery() {
                                 <Text color='black'>End Time</Text>
                                 <Select name="slot" className="weekday" value={endTime} onChange={(e) => setEndTime(e.target.value)}
                                     arrow={
-                                        <Box
-                                            as="svg"
-                                            xmln="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="currentcolor"
-                                            sx={{
-                                                ml: -28,
-                                                alignSelf: 'center',
-                                                pointerEvents: 'none',
-                                            }}>
-                                            <path d="M7.41 7.84l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z" />
+                                        <Box>
+                                            <ArrowDropDown
+                                                sx={{
+                                                    position: "absolute", height: '40px', width: '40px', justifyContent: 'space-between',
+                                                    alignSelf: 'center',
+                                                    ml: "-40px"
+                                                }} />
                                         </Box>
                                     }
                                 >
