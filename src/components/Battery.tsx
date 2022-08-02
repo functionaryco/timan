@@ -18,17 +18,20 @@ function Battery() {
     const [division, setDivision] = useState<any>("24");
     var today = new Date();
     var time = today.getHours();
-    const hour = ((endTime - time) / (endTime - startTime)) * 100;
+    var hour = ((endTime - time) / (endTime - startTime)) * 100;
     let arr = new Array();
     for (var i = 1; i <= division; i++) {
         arr.push(i);
     }
+    var nofs = (hour * division) / 100;
     useEffect(() => {
         const setDefaultTime = async () => {
             const dtime = JSON.parse(localStorage.getItem("Time") || "{}");
             setStartTime(dtime.startTime);
             setEndTime(dtime.endTime);
             setDivision(dtime.division);
+            hour = ((endTime - time) / (endTime - startTime)) * 100;
+            nofs = (hour * division) / 100;
         }
         setDefaultTime();
     }, [])
@@ -140,7 +143,7 @@ function Battery() {
                     </Box>
                 </Flex>
             </Box>
-            <Bar hour={hour} arr={arr} division={division} />
+            <Bar hour={hour} arr={arr} division={division} nofs={nofs} />
             <Footer />
         </>
     )
