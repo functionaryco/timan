@@ -35,7 +35,6 @@ function Battery() {
     useEffect(() => {
         localStorage.setItem("Time", JSON.stringify({ startTime, endTime, division }));
     }, [startTime, endTime, division])
-
     return (
         <>
             <Head>
