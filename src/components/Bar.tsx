@@ -6,10 +6,10 @@ interface Props {
   hour: any;
   arr?: any;
   division: any;
-  nofs: any;
 }
 
-function Bar({ hour, arr, division, nofs }: Props) {
+function Bar({ hour, arr, division }: Props) {
+  var nofs = (hour * division) / 100;
   return (
     <Box sx={{
       display: 'flex', justifyContent: 'space-between', marginTop: '66px', height: '400px',
