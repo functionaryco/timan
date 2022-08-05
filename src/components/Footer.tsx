@@ -7,6 +7,10 @@ import "react-h5-audio-player/lib/styles.css";
 function Footer() {
   const musicTracks = [
     {
+      name: "Cafe",
+      src: "https://cdn.pixabay.com/download/audio/2021/10/10/audio_1009cd220b.mp3?filename=cafe-ambience-9263.mp3"
+    },
+    {
       name: "Memories",
       src: "https://www.bensound.com/bensound-music/bensound-memories.mp3"
     },
