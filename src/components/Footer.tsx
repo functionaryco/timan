@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import React, { useState } from 'react'
-import { Box, Text, Image } from 'theme-ui'
+import { Box, Text, Image,useColorMode } from 'theme-ui'
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
@@ -87,6 +87,9 @@ function Footer() {
       currentTrack < musicTracks.length - 1 ? currentTrack + 1 : 0
     );
   };
+
+  const [mode, setMode] = useColorMode()
+
   return (
     <>
       {openPlayer &&
@@ -128,7 +131,10 @@ function Footer() {
             gap: '10px !important'
           },
         }}>
-          <Box sx={{
+          <Box  onClick={(e) => {
+        const next = mode === 'dark' ? 'light' : 'dark'
+        setMode(next)
+      }} sx={{
             width: '29px', height: '29px', backgroundColor: "#4F4F4F", borderRadius: '50%',
             '@media screen and (max-width: 720px)': {
               height: '19px !important'

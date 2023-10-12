@@ -1006,6 +1006,26 @@ const theme: Theme = {
       bg: 'red.6',
       ml: 2,
     },
+    btnSprint:{
+      textAlign: 'center',
+      display:'flex',
+      alignItems:'center',
+      justifyContent:'center',
+      fontSize: '16px',
+      fontWeight:500,
+      height:'40px',
+      px: '20px',
+      py: '12px',
+      border: '1px solid #00000080',
+      borderRadius: '4px',
+      backgroundColor:'#fff',
+      color:'#00000080',
+      cursor:'pointer',
+      ":hover":{
+        border:'1px solid #000',
+        boxShadow: '0 0 0 1px transparent'
+      }
+    },
     tertiary: {
       color: 'blue.9',
       bg: 'blue.2',

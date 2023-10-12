@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'test-utils';
-import Battery from '../Battery';
+import Battery from '../Battery/Battery';
 
 describe('Header', () => {
   it('should render without crashing', () => {
