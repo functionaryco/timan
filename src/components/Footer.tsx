@@ -142,7 +142,7 @@ function Footer() {
           }}
           ></Box>
           <Text sx={{
-            width: '364px', height: "27px", fontWeight: '400', fontSize: '22px', lineHeight: '27px', color: "#fff", fontStyle: 'normal',
+            width: '364px', height: "27px", fontWeight: '400', fontSize: '22px', lineHeight: '27px', color: mode == 'dark' ? "#fff" : '#000', fontStyle: 'normal',
             '@media screen and (max-width: 720px)': {
               fontSize: '18px !important',
               width: "264px !important"
@@ -151,7 +151,7 @@ function Footer() {
           >{openPlayer ? musicTracks[trackIndex].name : "Koramangala Thirdwave Coffeshop"}</Text>
         </Box>
         <Text sx={{
-          width: '52px', height: "17px", fontWeight: '400', fontSize: '14px', lineHeight: '17px', color: "#fff", opacity: "0.5", cursor: "pointer",
+          width: '52px', height: "17px", fontWeight: '400', fontSize: '14px', lineHeight: '17px', color: mode == 'dark' ? "#fff" : '#000', opacity: "0.5", cursor: "pointer",
           '@media screen and (max-width: 720px)': {
             fontSize: '18px !important',
           },

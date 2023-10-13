@@ -39,6 +39,10 @@ function Battery() {
 
   const startHour = parseInt(startTime.split(":")[0]);
   const endHour = parseInt(endTime.split(":")[0]);
+
+  const customStyles = {
+    color: 'black',
+  };
   
 
   return (
@@ -98,6 +102,7 @@ function Battery() {
                 display: 'flex',
                 width: 'max-content',
                 paddingBottom: '25px',
+                color:'black'
               }}
             >
               Update Your Sprint
@@ -111,11 +116,12 @@ function Battery() {
             >
               Select your time range ?
             </Text>
-            <div>
+            <div style={customStyles}>
               <TimeRangePicker
                 onChange={handleTimeChange}
                 value={[startTime, endTime]}
                 className={styles.Time}
+                
               />
             </div>
 
@@ -155,6 +161,7 @@ function Battery() {
                   background: '#fff',
                   width: '146px',
                   padding: '7px',
+                  color:'black'
                 }}
               />
             </Box>
