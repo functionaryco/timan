@@ -8,7 +8,7 @@ import { useStore } from 'src/store/timeStore';
 import TimeRangePicker from '@wojtekmaj/react-timerange-picker';
 import '@wojtekmaj/react-timerange-picker/dist/TimeRangePicker.css';
 import 'react-clock/dist/Clock.css';
-import styles from './Battery.module.css';
+import Example from '../Buttons/Button';
 
 function Battery() {
   const [modal, setModal] = useState(false);
@@ -42,6 +42,7 @@ function Battery() {
 
   const customStyles = {
     color: 'black',
+    margin: '10px 0px 40px'
   };
   
 
@@ -119,9 +120,7 @@ function Battery() {
             <div style={customStyles}>
               <TimeRangePicker
                 onChange={handleTimeChange}
-                value={[startTime, endTime]}
-                className={styles.Time}
-                
+                value={[startTime, endTime]}                
               />
             </div>
 
@@ -141,22 +140,14 @@ function Battery() {
                 gap: '12px',
               }}
             >
-              <Button onClick={(e) => setDivision(6)} variant="btnSprint">
-                Small
-              </Button>
-              <Button onClick={(e) => setDivision(12)} variant="btnSprint">
-                Medium
-              </Button>
-              <Button onClick={(e) => setDivision(18)} variant="btnSprint">
-                Large
-              </Button>
+              <Example setDivision={setDivision}/>
               <Input
                 placeholder="insert time division"
                 value={division}
                 onChange={(e) => setDivision(e.target.value)}
                 type="number"
                 sx={{
-                  border: '2px solid #000',
+                  border: '1px solid #000',
                   borderRadius: '4px',
                   background: '#fff',
                   width: '146px',

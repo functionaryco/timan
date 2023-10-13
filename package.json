@@ -19,6 +19,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@ariakit/react": "^0.3.4",
     "@emotion-icons/remix-line": "^3.14.0",
     "@emotion/css": "^11.9.0",
     "@emotion/react": "^11.9.0",

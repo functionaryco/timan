@@ -4,6 +4,7 @@ import NProgress from 'next-nprogress-emotion';
 import theme from '../theme';
 import Head from 'next/head';
 import HydrationZustand from 'src/components/HydrationZustand';
+import '../components/Buttons/Button.css'
 
 class MyApp extends App {
   render() {
