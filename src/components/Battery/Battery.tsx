@@ -23,7 +23,7 @@ function Battery() {
 
   var today = new Date();
   var time = today.getHours();
-  var minutes = today.getMinutes()
+  var minutes = today.getMinutes();
 
   let arr = new Array();
   for (var i = 0; i < division; i++) {
@@ -37,14 +37,13 @@ function Battery() {
     }
   };
 
-  const startHour = parseInt(startTime.split(":")[0]);
-  const endHour = parseInt(endTime.split(":")[0]);
+  const startHour = parseInt(startTime.split(':')[0]);
+  const endHour = parseInt(endTime.split(':')[0]);
 
   const customStyles = {
     color: 'black',
-    margin: '10px 0px 40px'
+    margin: '10px 0px 40px',
   };
-  
 
   return (
     <>
@@ -77,11 +76,13 @@ function Battery() {
               padding: '52px',
               borderRadius: '8px',
               '@media screen and (max-width: 720px)': {
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
                 width: '70vw !important',
-                height: '23vh !important',
-                marginTop: '10vh !important',
+                height: '50vh !important',
+                margin: '15vh auto !important',
                 padding: '30px !important',
-                marginLeft: '15vw !important',
               },
             }}
           >
@@ -92,6 +93,12 @@ function Battery() {
                 cursor: 'pointer',
                 right: '0px',
                 top: '0px',
+                '@media screen and (max-width: 720px)': {
+                  position: 'absolute',
+                  cursor: 'pointer',
+                  right: '-5px',
+                  top: '-6px',
+                },
               }}
               alt="cross"
               onClick={() => setModal(!modal)}
@@ -103,7 +110,7 @@ function Battery() {
                 display: 'flex',
                 width: 'max-content',
                 paddingBottom: '25px',
-                color:'black'
+                color: 'black',
               }}
             >
               Update Your Sprint
@@ -113,6 +120,9 @@ function Battery() {
                 color: '#00000080',
                 width: 'max-content',
                 marginBottom: '12px',
+                '@media screen and (max-width: 720px)': {
+                  marginBottom: 1,
+                },
               }}
             >
               Select your time range ?
@@ -120,7 +130,8 @@ function Battery() {
             <div style={customStyles}>
               <TimeRangePicker
                 onChange={handleTimeChange}
-                value={[startTime, endTime]}                
+                value={[startTime, endTime]}
+                className="react-timerange-picker"
               />
             </div>
 
@@ -133,14 +144,19 @@ function Battery() {
               How long is the sprint ?
             </Text>
             <Box
-              style={{
+              sx={{
                 display: 'flex',
                 marginTop: '12px',
                 marginBottom: '28px',
                 gap: '12px',
+                '@media screen and (max-width: 720px)': {
+                  display: 'flex',
+                  flexDirection: 'column',
+                  marginBottom: 3,
+                },
               }}
             >
-              <Example setDivision={setDivision}/>
+              <Example setDivision={setDivision} />
               <Input
                 placeholder="insert time division"
                 value={division}
@@ -150,9 +166,9 @@ function Battery() {
                   border: '1px solid #000',
                   borderRadius: '4px',
                   background: '#fff',
-                  width: '146px',
+                  width: 'auto',
                   padding: '7px',
-                  color:'black'
+                  color: 'black',
                 }}
               />
             </Box>
@@ -274,7 +290,15 @@ function Battery() {
           </Box>
         </Flex>
       </Box>
-      <Bar arr={arr} startHour={startHour} endHour={endHour} startTime={startTime} endTime={endTime} time={time} minutes={minutes}/>
+      <Bar
+        arr={arr}
+        startHour={startHour}
+        endHour={endHour}
+        startTime={startTime}
+        endTime={endTime}
+        time={time}
+        minutes={minutes}
+      />
       <Footer />
     </>
   );

@@ -3,3 +3,9 @@
     margin-bottom:2rem;
     
 }
+
+.react-timerange-picker {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+}

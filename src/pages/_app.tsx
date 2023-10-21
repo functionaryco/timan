@@ -5,6 +5,7 @@ import theme from '../theme';
 import Head from 'next/head';
 import HydrationZustand from 'src/components/HydrationZustand';
 import '../components/Buttons/Button.css'
+import '../components/Battery/Battery.css'
 
 class MyApp extends App {
   render() {
