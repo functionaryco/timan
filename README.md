@@ -1,44 +1,81 @@
-# Next.js Front End starter pack
+# Turborepo starter
 
-Based on [`next-theme-ui-example`](https://github.com/system-ui/theme-ui/tree/master/examples/next).
+This is an official starter Turborepo.
 
-Featuring:
+## Using this example
 
-- TypeScript
-- Next.js
-- ThemeUI
-- NProgress
-- Jest
-- Cypress
-- react-testing-library
+Run the following command:
 
-## Demo
-
-[Click Here](https://timan.vercel.app/)
-
-## Testing
-
-Jest is configured and ready to use with `react-testing-library`.
-
-There is a custom rendering setup similar to what is found in [the documentation](https://testing-library.com/docs/react-testing-library/setup#custom-render). It wraps all tested components with ThemeUI's `ThemeProvider`.
-
-The custom test renderer, and all `react-testing-library` exports are available without using relative imports:
-
-```javascript
-import { render, fireEvent } from 'test-utils';
+```sh
+npx create-turbo@latest
 ```
 
-Make sure you import from `'test-utils'` or your tests may crash if the theme is expected.
+## What's inside?
 
-### Emotion snapshots
+This Turborepo includes the following packages/apps:
 
-Because ThemeUI uses emotion under the hood, `@emotion/jest`'s [snapshot serializer](https://emotion.sh/docs/testing) is included.
+### Apps and Packages
 
-Refer to the emotion's [testing documentation](https://emotion.sh/docs/testing) for more info.
+- `docs`: a [Next.js](https://nextjs.org/) app
+- `web`: another [Next.js](https://nextjs.org/) app
+- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
-### End-to-End tests with Cypress
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-See [the example test](https://github.com/freddydumont/theme-ui-next-boilerplate/blob/master/cypress/integration/navigation_spec.ts) and Cypress's documentation to get started.
+### Utilities
 
-By default the tests are running in CI with GitHub actions.
-"# Theme-UI" 
+This Turborepo has some additional tools already setup for you:
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+
+### Build
+
+To build all apps and packages, run the following command:
+
+```
+cd my-turborepo
+pnpm build
+```
+
+### Develop
+
+To develop all apps and packages, run the following command:
+
+```
+cd my-turborepo
+pnpm dev
+```
+
+### Remote Caching
+
+Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+
+By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+
+```
+cd my-turborepo
+npx turbo login
+```
+
+This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+
+Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+
+```
+npx turbo link
+```
+
+## Useful Links
+
+Learn more about the power of Turborepo:
+
+- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
+- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
+- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
+- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
+- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
+- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
